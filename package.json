@@ -1,16 +1,11 @@
 {
-  "name": "wp5-starter-react",
+  "name": "react-chrome-webvital-performance",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "start": "webpack-dev-server --open --mode development",
     "start:live": "webpack-dev-server --open --mode development --liveReload"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Jack Herrington",
-    "email": "jherr@pobox.com"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
