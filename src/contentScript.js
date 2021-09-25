@@ -33,11 +33,10 @@ const gatherMetrics = ({ name, value }) => {
     `;
 };
 
-// TODO: Remove these logs. For now we will log to see what type of data the API is returning
-getTTFB(console.log);
-getLCP(console.log);
-getFID(console.log);
-getFCP(console.log);
-getCLS(console.log);
+getTTFB(gatherMetrics);
+getLCP(gatherMetrics);
+getFID(gatherMetrics);
+getFCP(gatherMetrics);
+getCLS(gatherMetrics);
 
 console.log("TEST");
