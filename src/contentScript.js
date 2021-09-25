@@ -21,6 +21,16 @@ const gatherMetrics = ({ name, value }) => {
   const metricsHTML = Object.keys(metrics)
     .map((k) => `<div>${k}</div><div>${Math.round(metrics[k])}</div>`)
     .join("");
+
+  // Add HTML metric data
+  infoDiv.innerHTML = `
+  <div style="font-weight:bold;font-size:x-large">Perf Metrics</div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; grid-column-gap: 1rem;">
+    <div>Metric</div>
+    <div>Value</div>
+    ${metricsHTML}
+  </div>
+    `;
 };
 
 // TODO: Remove these logs. For now we will log to see what type of data the API is returning
