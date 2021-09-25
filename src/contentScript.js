@@ -12,6 +12,17 @@ infoDiv.style.padding = "1rem";
 infoDiv.style.fontFamily = "Arial";
 document.body.appendChild(infoDiv);
 
+const metrics = {};
+
+const gatherMetrics = ({ name, value }) => {
+  metrics[name] = value;
+
+  // Parse metric data into HTML
+  const metricsHTML = Object.keys(metrics)
+    .map((k) => `<div>${k}</div><div>${Math.round(metrics[k])}</div>`)
+    .join("");
+};
+
 // TODO: Remove these logs. For now we will log to see what type of data the API is returning
 getTTFB(console.log);
 getLCP(console.log);
