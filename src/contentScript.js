@@ -17,6 +17,13 @@ const metrics = {};
 const gatherMetrics = ({ name, value }) => {
   metrics[name] = value;
 
+  // Send the message to chrome background
+  chrome.runtime.sendMessage({
+    type: "performance:metric",
+    name,
+    value,
+  });
+
   // Parse metric data into HTML
   const metricsHTML = Object.keys(metrics)
     .map((k) => `<div>${k}</div><div>${Math.round(metrics[k])}</div>`)
