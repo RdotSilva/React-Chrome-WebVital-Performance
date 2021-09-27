@@ -6,5 +6,6 @@ const data = {};
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === "performance:metric") {
     console.log(request);
+    // TODO: Remove log and render data to React
   }
 });
