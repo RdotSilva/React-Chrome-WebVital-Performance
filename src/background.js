@@ -7,5 +7,15 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === "performance:metric") {
     console.log(request);
     // TODO: Remove log and render data to React
+    // Get the URL of the tab
+    const tab = sender.tab.url.toString();
+    data[tab] = data[tab] || {};
+
+    // Initialize average metric data if it doesn't exist
+    const name = request.name;
+    data[tab][name] = data[tab][name] || {
+      values: [],
+      average: 0,
+    };
   }
 });
