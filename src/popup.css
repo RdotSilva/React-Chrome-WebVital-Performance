@@ -3,3 +3,8 @@ body {
   height: 500px;
   width: 500px;
 }
+
+.title {
+  font-size: 23px;
+  font-weight: 100;
+}
