@@ -24,4 +24,5 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       data[tab][name].values.reduce((a, v) => a + v, 0) /
       data[tab][name].values.length;
   }
+  if (request.type === "performance:metric:request") sendResponse(data);
 });
