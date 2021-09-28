@@ -13,3 +13,9 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
+
+.metric-display {
+  font-weight: bold;
+  font-size: 15px;
+  color: aquamarine;
+}
