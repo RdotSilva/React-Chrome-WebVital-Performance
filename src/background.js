@@ -17,5 +17,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       values: [],
       average: 0,
     };
+    data[tab][name].values.push(request.value);
+
+    // Calculate average
+    data[tab][name].average =
+      data[tab][name].values.reduce((a, v) => a + v, 0) /
+      data[tab][name].values.length;
   }
 });
