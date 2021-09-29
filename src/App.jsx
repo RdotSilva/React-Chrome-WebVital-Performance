@@ -1,22 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-
 import "./App.css";
+import MetricData from "./components/MetricData";
 
 const App = () => {
-  // Get the performance metric data when loaded
-  useEffect(() => {
-    chrome.runtime.sendMessage({
-      type: "performance:metric",
-  }, (data) => {
-    console.log(data)
-  }, []);
-
-  return (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  );
+  return <MetricData />;
 };
 
 ReactDOM.render(<App />, document.getElementById("app"));
