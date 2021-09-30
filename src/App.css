@@ -3,3 +3,11 @@ body {
   height: 500px;
   width: 500px;
 }
+
+.metric-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
