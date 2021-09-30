@@ -11,3 +11,8 @@ body {
   background-color: #04aa6d;
   color: white;
 }
+
+.metric-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
