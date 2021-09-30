@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+const METRICS = ["TTFB", "LCP", "FID", "FCP", "CLS"];
+
 /**
  * Component used to render MetricData taken in from Google Chrome runtime
  */
@@ -18,5 +20,9 @@ export default function MetricData() {
     );
   }, []);
 
-  return <div></div>;
+  return (
+    <div>
+      <h1>Page Metrics</h1>
+    </div>
+  );
 }
