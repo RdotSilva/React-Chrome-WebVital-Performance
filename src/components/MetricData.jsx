@@ -34,7 +34,15 @@ export default function MetricData() {
             ))}
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {Object.keys(data).map((url) => (
+            <tr key={url}>
+              <td key={[url, metric].join("")} width="16%">
+                {metric}
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
