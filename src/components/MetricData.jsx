@@ -23,6 +23,19 @@ export default function MetricData() {
   return (
     <div>
       <h1>Page Metrics</h1>
+      <table>
+        <thead>
+          <tr>
+            <th width="20%"></th>
+            {METRICS.map((metric) => (
+              <th key={metric} width="16%">
+                {metric}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
   );
 }
