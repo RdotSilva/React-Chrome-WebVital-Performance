@@ -38,7 +38,7 @@ export default function MetricData() {
           {Object.keys(data).map((url) => (
             <tr key={url}>
               <td key={[url, metric].join("")} width="16%">
-                {metric}
+                {Math.round((data[url][metric] || { average: 0 }).average)}
               </td>
             </tr>
           ))}
