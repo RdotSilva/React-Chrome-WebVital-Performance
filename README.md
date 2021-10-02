@@ -7,6 +7,7 @@ TV show search extension for Google Chrome
 - [JavaScript](https://www.javascript.com/)
 - [React](https://reactjs.org/)
 - [Chrome Extension APIs](https://developer.chrome.com/docs/extensions/reference/)
+- [Google Web Vitals](https://web.dev/vitals/)
 
 ## Screenshots
 
