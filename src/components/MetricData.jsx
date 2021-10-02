@@ -7,6 +7,7 @@ const METRICS = ["TTFB", "LCP", "FID", "FCP", "CLS"];
  */
 export default function MetricData() {
   const [metricData, setMetricData] = useState({});
+  const [rating, setRating] = useState({});
 
   // Get the performance metric data when loaded
   useEffect(() => {
