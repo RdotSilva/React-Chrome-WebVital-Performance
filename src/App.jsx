@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import MetricData from "./components/MetricData";
-import { Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <>
-      <Link to="/about" />
+      <Navbar />
       <MetricData />;
     </>
   );
