@@ -1,6 +1,6 @@
 # React Web Vital Performance Google Chrome Extension
 
-TV show search extension for Google Chrome
+Google Chrome extension that shows users Web Vital information for every site they visit.
 
 ## Built With
 
