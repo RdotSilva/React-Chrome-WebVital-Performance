@@ -21,3 +21,11 @@ body {
   height: 500px;
   width: 500px;
 }
+
+.about-link a:hover {
+  color: green;
+}
+
+.about-link a:link {
+  color: red;
+}
