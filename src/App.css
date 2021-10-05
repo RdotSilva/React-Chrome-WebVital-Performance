@@ -29,3 +29,9 @@ body {
 .about-link a:link {
   color: red;
 }
+
+.footer-container {
+  display: grid;
+  grid-column: auto;
+  grid-row: initial;
+}
