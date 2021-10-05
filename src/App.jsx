@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
+import Footer from "./components/Footer";
 import MetricData from "./components/MetricData";
 import Navbar from "./components/Navbar";
 
@@ -9,6 +10,7 @@ const App = () => {
     <>
       <Navbar />
       <MetricData />;
+      <Footer />
     </>
   );
 };
